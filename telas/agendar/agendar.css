@@ -1,0 +1,50 @@
+.opcoes{
+    display: flex;
+    margin: 8px;
+}
+
+.opcoes input{
+    border-radius: 8px;
+    height: 25px;
+    margin-left: 9px;
+    width: 20%;
+}
+
+.opcoes select{
+    border-radius: 8px;
+    padding: 5px;
+    width: 90px;
+    margin-top: -5px;
+}
+
+.vaga-adaptada{
+    display: flex;
+}
+
+.vaga-adaptada input[type="checkbox"]{
+    width: 20px;
+    margin-left: 9px;
+}
+
+.descricao{
+    border-radius: 8px;
+
+}
+.btns{
+    display:flex;
+    align-self: end;
+    margin: 5px;
+}
+.btns button{
+    border-radius: 8px;
+    padding: 5px;
+    margin-left: 5px;
+    background-color: gray;
+    color: white;
+}
+
+.estacionamentos{
+    border-radius: 8px;
+    width: 60%;
+    height: 19px;
+}
