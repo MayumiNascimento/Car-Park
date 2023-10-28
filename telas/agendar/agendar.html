@@ -1,57 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/global.css">
     <link rel="stylesheet" href="agendar.css">
+    <link rel="stylesheet" href="../../css/global.css">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="conteudo">
-        <img src="" alt="">
-        <h1>Agendamento</h1> <br>
-
-        Estacionamento
-        <input class="estacionamentos" type="text" placeholder="Nome do Estacionamento">
-        <p>__ vagas disponíveis</p>
-        <br><br>
-
-        <div class="opcoes">
-            <h3>Dia e horário <br> entrada: </h3>
-            <input type="text" placeholder="dd/mm">
-            <input type="text" name="" id="" placeholder="hh:mm">
-        </div>
-            
-        <div class="opcoes">
-            <h3>Dia e horário <br> de saída: </h3>
-            <input type="text" placeholder="dd/mm">
-            <input type="text" name="" id="" placeholder="hh:mm">
-        </div>
-            <br>
-            <div class="vaga-adaptada">
-                <h3>Necessito de vaga adaptada: </h3>
-                <input type="checkbox" name="" id="">
-            </div><br>
-            <h4>Se marcada a opção acima, <br>descreva sua necessidade</h4>
-            <textarea class="descricao" name="" id="" cols="35" rows="10"></textarea>
-            <br>
-            <div class="opcoes">
-                <h4>Método de pagamento: </h4>
-                <select name="pagamento" id="">
-                    <option>selecione</option>
-                    <option>PIX</option>
-                    <option>cartão débito/crédito</option>
-                    <option>Dinheiro</option>
-                </select>
-            </div>
-
-            <div class="btns">
-                <button type="reset">Cancelar</button>
-                <a href="../modais/agendamentoConfirmado.html">
-                    <button type="submit">Realizar Agendamento</button>
+    <div class="phone-container">
+        <br>
+        <div class="header-title-wrapper">
+            <div class="item">
+                <a href="../paginaInicial/paginaInicial.html">
+                    <img src="../../images/seta-direita.png" alt="Voltar" width="23">
                 </a>
             </div>
+            <div class="item">
+                <p>Agendamento</p>
+                <br>
+            </div>
+
+            <div class="item">
+            </div>
         </div>
+        <h2 style="text-align: center; font-size: 16px;">Estabelecimento</h2>
+        <div class="form-container">
+            <form action="" method="get">
+                <div class="form-group">
+                    <img src="../../images/search.png" alt="Pesquisar" width="18">
+                    <input type="search" name="search" id="search" placeholder="Pesquisar um estacionamento...">
+                </div>
+            </form>
+        </div>
+        <div class="disponiveis-container">
+            <div class="item">
+                <p>Dia e horário de entrada</p>
+                <div><input type="date" name="" ></div>
+                <div><input type="text" name=""  placeholder="hh:mm"></div>
+            </div>
+            <div class="item">
+                <p>Dia e horário de entrada</p>
+                <div><input type="date" name="" ></div>
+                <div><input type="text" name="" placeholder="hh:mm"></div>
+            </div>
+        </div>
+        <br>
+        <div style="display: flex;">
+            <p style="margin-right: 10px; font-size: 12px !important;">Necessito de vaga adptada</p>
+            <input type="checkbox" name="vaga-adptada" id="vaga-adptada">
+        </div>
+        <br>
+        <div style="font-size: 11px !important;">
+            <p>Se marcada a opção acima, descreva sua necessidade:</p>
+            <textarea name="" id="" cols="40" rows="7" style="border: 1px solid #CCC; width: calc(100% - 10px);"></textarea>
+        </div>
+        <br>
+        <div style="display: flex; ">
+            <p style="font-size: 11px; margin-right: 10px;">Metodo de Pagamento</p>
+            <select name="pagamento">
+                <option>selecione</option>
+                <option>PIX</option>
+                <option>cartão débito/crédito</option>
+                <option>Dinheiro</option>
+            </select>
+        </div>
+        <div style="display: flex; justify-content: flex-end; margin-top: 30px;">
+            <a href="../modais/agendamentoConfirmado.html">
+                <button style="border: 1px solid #CCC; padding: 5px 10px; margin-right: 10px; border-radius: 15px;">Realizar Agendamento</button>
+            </a>
+            <button style="border: 1px solid #CCC; padding: 5px 10px; margin-right: 10px; border-radius: 15px;">Cancelar</button>
+        </div>
+        <footer class="footer">
+            <div class="item">
+                <a href="../perfil/perfil.html">
+                    <img src="../../images/user.png" alt="User" width="32">
+                </a>
+            </div>
+            <div class="item">
+                <a href="../paginaInicial/paginaInicial.html">
+                    <img src="../../images/home.png" alt="User" width="32">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="../../images/setting.png" alt="User" width="32">
+                </a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

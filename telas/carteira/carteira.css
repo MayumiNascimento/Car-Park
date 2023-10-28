@@ -1,0 +1,55 @@
+
+
+
+.header-title-wrapper
+{
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.header-title-wrapper .item
+{
+    width: 100%;
+}
+
+/* ---------------------------------------- */
+
+.p-cartoes-cadastrados
+{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: #585858;
+}
+
+.cartoes-cadastrados-wrapper
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.cartoes-wrapper .item
+{
+    background-color: #e2e2e2;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cartoes-wrapper .item p
+{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.historico-pagamento-wrapper .item
+{
+    font-size: 12px;
+    background-color: #e2e2e2;
+    padding: 5px 8px;
+    font-weight: bold;
+}

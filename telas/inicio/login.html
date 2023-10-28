@@ -8,36 +8,34 @@
     <link rel="stylesheet" type="text/css" href="inicio.css">
 </head>
 <body>
-    <div class="conteudo">
+    <div class="phone-container conteudo">
         <h1><a href="../index.html">Car Park</a></h1>
         <br>
-
-        <div>
-            <form action="">
-
-                <div>
                     <!-- icon svg -->
-                    <input type="email" 
-                        name="" 
+                    <label for="email">Email
+                        <input type="email" 
+                        name="email" 
                         id=""
                         placeholder="Digite seu email"
                         class="FormInput"
                         required >
-                </div><br>
-            <div>
+                    </label>
+                    <br>
+
                 <!-- icon svg -->
-                <input type="password" 
-                    name="" 
+                <label for="senha">Senha
+                    
+                    <input type="password" 
+                    name="senha" 
                     id=""
                     placeholder="Digite sua senha"
                     class="FormInput"
                     required
                     minlength="8">
-            </div><br>
-            
-        </div>
-        <button type="submit">Entrar</button>
-    </form>
+                </label>
+                <br>            
+
+        <button type="submit" onclick="window.location.href = '../paginaInicial/paginaInicial.html'">Entrar</button>
     <br>
         <p>Ou acesse com uma rede social: </p>
         <div class="icons">

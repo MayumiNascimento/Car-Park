@@ -1,0 +1,109 @@
+/* Adicionar em todos os arquivos CSS do app */
+
+body
+{
+    background-color: #1d1d1d;
+}
+
+.phone-container
+{
+    max-width: 365px;
+    width: 100%;
+    padding: 0 10px;
+    border-radius: 15px;
+    height: 600px;
+    background-color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'Montserrat', sans-serif;
+    transform: translate(-50%, -50%);
+}
+
+.footer
+{
+    background-color: #e2e2e2;
+    height: 55px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title-wrapper
+{
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.header-title-wrapper .item
+{
+    width: 100%;
+}
+
+/* ---------------------------------------- */
+
+.map-container
+{
+    padding-bottom: 15px;
+}
+
+.form-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.form-container .form-group
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-container .form-group img
+{
+    background-color: #f0f0f0;
+    border: 1px solid #CCC;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 2.5px;
+}
+
+.form-container form input
+{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 4px 7px;
+    width: 280px;
+    border: 1px solid #CCC;
+    background-color: #f0f0f0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.estacionamentos-container .item 
+{
+    display: flex;
+    align-items: center;
+    background-color: #e2e2e2;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.estacionamentos-container .item p
+{
+    font-size: 13px;
+}
+
+.estacionamentos-container .item .more-infos button
+{
+    border-radius: 20px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px 10px;
+    background-color: #1d1d1d;
+    color: #FFF;
+}
