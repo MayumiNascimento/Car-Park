@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="./modal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class=" modal">
+        <section class=" excluir">
+            <div class="modal" style="font-size: 15px;">
+             <h3 style="margin-bottom: 10px;">Confirme as informações: </h3> 
+
+             <!-- <p>Nome: </p>
+             <p>Contato: </p>
+             <p>Veículo: </p>
+             <p>Placa: </p> -->
+             <p class="dia-entrada" style="margin-bottom: 10px;">Dia de entrada: </p>
+             <p class="horario-entrada" style="margin-bottom: 10px;">Horário de entrada: </p>
+             <p class="dia-saida" style="margin-bottom: 10px;">Dia de saída: </p>
+             <p class="horario-saida" style="margin-bottom: 10px;">Horário de saída: </p>
+             <p class="vaga-adptada" style="margin-bottom: 10px;">Vaga PCD: </p>
+             <p class="metodo-pagamento" style="margin-bottom: 10px;">Método de pagamento: </p>
+              <div class="acoes">
+                <a href="../historico/historico.html"><button class="botao" >Confirmar</button></a>
+                <a href="#">
+                    <button class="botao" >Cancelar</button>
+                </a>
+              </div>
+            </div>
+
+          </section>
+    </div>
+    <script>
+      let data_agendamento = localStorage.getItem('data_agendamento');
+      let horario_agendamento = localStorage.getItem('hora_agendamento');
+      let data_agendamento_saida = localStorage.getItem('data_agendamento_saida');
+      let horario_agendamento_saida = localStorage.getItem('hora_agendamento_saida');
+      let vaga_adaptada = localStorage.getItem('vaga_adptada');
+      let pagamento = localStorage.getItem('pagamento');
+
+      if(data_agendamento != null && horario_agendamento != null && pagamento != null)
+      {
+        let data_agendamento = localStorage.getItem('data_agendamento');
+        let horario_agendamento = localStorage.getItem('hora_agendamento');
+        let pagamento = localStorage.getItem('pagamento');
+        let vaga_adaptada_display = vaga_adaptada == true ? 'Sim' : 'Não';
+
+        document.querySelector('.dia-entrada').innerHTML += data_agendamento;
+        document.querySelector('.horario-entrada').innerHTML += horario_agendamento;
+        document.querySelector('.dia-saida').innerHTML += data_agendamento_saida;
+        document.querySelector('.horario-saida').innerHTML += horario_agendamento_saida;
+        document.querySelector('.vaga-adptada').innerHTML += vaga_adaptada_display;
+        document.querySelector('.metodo-pagamento').innerHTML += pagamento;
+      }
+      else
+      {
+        window.location.href = '../agendar/agendar.html';
+      }
+    </script>
+</body>
+</html>

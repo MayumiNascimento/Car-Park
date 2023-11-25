@@ -1,0 +1,143 @@
+/* Adicionar em todos os arquivos CSS do app */
+
+body
+{
+    background-color: #1d1d1d;
+}
+
+.phone-container
+{
+    max-width: 365px;
+    width: 100%;
+    padding: 0 10px;
+    border-radius: 15px;
+    height: 650px;
+    background-color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'Montserrat', sans-serif;
+    transform: translate(-50%, -50%);
+}
+
+.footer
+{
+    background-color: #e2e2e2;
+    height: 54px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 1px;
+    position: fixed;
+    width: calc(100% - 20px);
+}
+
+.header-title-wrapper
+{
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.header-title-wrapper .item
+{
+    width: 100%;
+}
+
+/* ---------------------------------------- */
+
+.filtro-container
+{
+    display: flex;
+    background-color: #e2e2e2;
+    align-items: center;
+    font-size: 13px;
+    padding: 0 2px;
+}
+
+.filtro-container .item img
+{
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.p-agendamentos
+{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: #585858;
+}
+
+.agendamentos-container .item
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    background-color: #e2e2e2;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+}
+
+.agendamentos-container .item .estabelecimento
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.agendamentos-container .item .status
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.agendamentos-container .item .estabelecimento p
+{
+    text-align: center;
+}
+
+.agendamentos-container .item .estabelecimento .img
+{
+    width: 60px;
+    height: 60px;
+    background-color: #cacaca;
+    border-radius: 50%;
+}
+
+.butn{
+    border: 1px solid #CCC; 
+    padding: 5px 10px; 
+    margin-right: 10px; 
+    border-radius: 15px;
+}
+.butn:hover{
+    background-color: #CCC;
+}
+
+.status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agendamentoAberto::before{
+    content: ' ';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.agendamentoEncerrado::before{
+    content: ' ';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+}

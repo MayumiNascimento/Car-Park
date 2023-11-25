@@ -1,0 +1,75 @@
+/* Adicionar em todos os arquivos CSS do app */
+
+body
+{
+    background-color: #1d1d1d;
+}
+
+.phone-container
+{
+    max-width: 365px;
+    width: 100%;
+    padding: 0 10px;
+    border-radius: 15px;
+    height: 600px;
+    background-color: #3b3b3b;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    transform: translate(-50%, -50%);
+}
+
+.footer
+{
+    background-color: #e2e2e2;
+    height: 55px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title-wrapper
+{
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.header-title-wrapper .item
+{
+    width: 100%;
+}
+
+/* ---------------------------------------- */
+
+.cadastrar-cartao-wrapper
+{
+    width: 100%;
+    height: 320px;
+    background-color: #FFF;
+    border-radius: 20px;
+}
+
+.cadastrar-cartao-form-wrapper form input
+{
+    font-family: 'Montserrat', sans-serif !important;
+    border: 1px solid #ccc;
+    padding: 3px 5px;
+    border-radius: 10px;
+}
+
+.input-submit
+{
+    background-color: #e2e2e2;
+    width: 130px !important;
+    padding: 5px 0 !important;
+    border: none !important;
+    display: block;
+    margin: auto;
+}
