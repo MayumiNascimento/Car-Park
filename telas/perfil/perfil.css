@@ -1,0 +1,79 @@
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px !important;
+}
+
+.conteudo input
+{
+   border: none;
+   border: 1px solid #b4b4b4;
+}
+
+button{
+    border-radius: 8px;
+    padding: 5px;
+    margin-left: 5px;
+    background-color: black;
+    color: white;
+    margin: 5px;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+
+}
+
+input{
+    width: 200px;
+    border-radius: 7px;
+    height: 25px
+}
+
+.name {
+    width: 100px;
+}
+
+input[type="radio"]{
+    width: 50px;
+    height: 17px;
+}
+
+
+label{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dv1{
+    display: flex;
+}
+
+.dv1 input {
+    margin-left: 0px;
+}
+
+.radios{
+    display: flex;
+}
+
+button[type="submit"]{
+    float: right;
+    margin-right: 11px;
+    width: 90px;
+    border-radius: 15px;
+}
+button[type="submit"]:hover{
+    background-color: gray;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

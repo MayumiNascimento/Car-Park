@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="historico.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="phone-container">
+        <div class="header-title-wrapper">
+            <div class="item">
+                <a href="../paginaInicial/paginaInicial.html">
+                    <img src="../../images/seta-direita.png" alt="Voltar" width="23">
+                </a>
+            </div>
+            <div class="item">
+                <p>Agendamentos</p>
+            </div>
+            <div class="item">
+            </div>
+        </div>
+        <div class="filtro-container">
+            <div class="item">
+                <img src="../../images/filtro.png" width="20">
+            </div>
+            <div class="item">
+                <p>Filtre por período</p>
+            </div>
+        </div>
+        <p class="p-agendamentos agendamentoAberto"> Agendamentos em aberto</p>
+        <div class="agendamentos-container">
+            <div class="item">
+                <div class="infos">
+                    <h3 class="data"></h3> <!-- alterar data -->
+                    <h3 class="hora"></h3>
+                    <p class="vaga_adaptada"></p>
+                    <h3>Valor: R$ 10,00</h3>
+                </div>
+                <div class="estabelecimento">
+                    <div class="img">
+                        <img style="width: 60px; height: 60px; border-radius: 50%;" src="../../images/estacionamento-bem-grande.jpg" alt="">
+                    </div>
+                    <p>Praiamar</p>
+                </div>
+                
+            </div>
+            <div class="status">
+                <button class="butn" onclick="cancelarAgendamento()">Cancelar</button>
+                <button class="butn" >  <a href="../EditarAgendamento/editarAgendamento.html">Editar</a></button>
+            </div>
+        </div>
+        <br>
+
+        <p class="p-agendamentos agendamentoEncerrado"> Agendamentos concluídos</p>
+        <div class="agendamentos-container">
+
+            <p style="font-size: 13px;">Não existem agendamentos concluídos.</p>
+
+        </div>
+
+
+        <footer class="footer">
+            <div class="item">
+                <a href="../perfil/perfil.html">
+                    <img src="../../images/user.png" alt="User" width="32">
+                </a>
+            </div>
+            <div class="item">
+                <a href="../paginaInicial/paginaInicial.html">
+                    <img src="../../images/home.png" alt="User" width="32">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="../../images/lista.png" alt="User" width="32">
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        let data_agendamento = localStorage.getItem('data_agendamento');
+        let horario_agendamento = localStorage.getItem('hora_agendamento');
+        let pagamento = localStorage.getItem('pagamento');
+
+
+        if(data_agendamento != null && horario_agendamento != null && pagamento != null)
+        {
+            document.querySelector('.data').innerHTML = "Dia "+data_agendamento;
+            document.querySelector('.hora').innerHTML = "Horário "+horario_agendamento;
+
+            
+        }
+        else
+        {
+            document.querySelector('.agendamentos-container').style.fontSize = '13px';
+            document.querySelector('.agendamentos-container').innerHTML = 'Não existem agendamentos em aberto';
+        }
+
+        const cancelarAgendamento = () => {
+            localStorage.removeItem('data_agendamento');
+            localStorage.removeItem('hora_agendamento');
+
+            localStorage.removeItem('necessidade_text');
+            localStorage.removeItem('pagamento');
+
+            window.location.reload();
+        }
+
+    </script>
+</body>
+</html>

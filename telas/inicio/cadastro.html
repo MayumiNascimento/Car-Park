@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="../../css/global.css">
+    <link rel="stylesheet" type="text/css" href="inicio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="phone-container conteudo" style="display: flex; flex-direction:column; align-items: center; justify-content: center;">
+        <div class="header-title-wrapper">
+            <div class="item" style="margin-bottom: 5px;">
+                <a href="login.html">
+                    <img src="../../images/seta-direita.png" alt="Voltar" width="23">
+                </a>
+            </div>
+        </div>
+        <h1><a href="../index.html">Car Park</a></h1>
+        <br>
+            <form id="form-cadastro-usuario" class="form-cadastro-usuario">
+                <div>
+                    <!-- icon svg -->
+                    <input type="text" 
+                    name="name" 
+                    id="name"
+                    placeholder="Digite seu nome"
+                    class="FormInput">
+            </div><br>
+            <div>
+                <!-- icon svg -->
+                <input type="email" 
+                        name="email" 
+                        id="email"
+                        placeholder="Digite seu email"
+                        class="FormInput">
+            </div><br>
+            <div>
+                <!-- icon svg -->
+                <input type="password" 
+                name="password" 
+                id="password"
+                placeholder="Digite uma senha"
+                class="FormInput">
+            </div><br>
+            <div>
+                <!-- icon svg -->
+                <input type="password" 
+                name="" 
+                id=""
+                placeholder="Digite novamente a senha"
+                class="FormInput" 
+                minlength="8">
+            </div><br>
+        <button type="submit" class="submit" onclick="cadastrarUsuario()">Cadastrar</button>
+    </form>
+        <br>
+        <p style="font-size: 13px;">Já tem uma conta? <a href="login.html">Conecte-se</a></p>
+    </div>
+    
+    <script src="../../scripts/database.js"></script>
+</body>
+</html>

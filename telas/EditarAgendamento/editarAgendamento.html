@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar agendamento</title>
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="./editarAgendamento.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="phone-container">
+        <br>
+        <div class="header-title-wrapper">
+            <div class="item">
+                <a href="../paginaInicial/paginaInicial.html">
+                    <img src="../../images/seta-direita.png" alt="Voltar" width="23">
+                </a>
+            </div>
+            <div class="item">
+                <p>Agendamento</p>
+                <br>
+            </div>
+
+            <div class="item">
+            </div>
+        </div>
+        <h2 style="text-align: center; font-size: 16px; margin-bottom: 15px;">Praiamar</h2>
+        <div class="disponiveis-container">
+            <div class="item" style="margin-bottom: 10px;">
+                <p>Dia e horário de entrada</p>
+                <div><input type="date" name="data-agendamento" id="data-agendamento" class="data-agendamento"></div>
+                <div><input type="text" name="hora-agendamento" class="hora-agendamento" id="hora-agendamento" placeholder="hh:mm"></div>
+            </div>
+            <div class="item" style="margin-bottom: 10px;">
+                <p>Dia e horário de saída</p>
+                <div><input type="date" name="data-agendamento-saida" id="data-agendamento-saida" class="data-agendamento-saida"></div>
+                <div><input type="text" name="hora-agendamento-saida" class="hora-agendamento-saida" id="hora-agendamento-saida" placeholder="hh:mm"></div>
+            </div>
+        </div>
+        <br>
+        <div style="display: flex;">
+            <p style="margin-right: 10px; font-size: 12px !important;">Necessito de vaga adptada</p>
+            <input type="checkbox" name="vaga-adptada" id="vaga-adptada" value="" class="vaga-adptada">
+        </div>
+        <br>
+        <div style="font-size: 11px !important;">
+            <p>Se marcada a opção acima, descreva sua necessidade:</p>
+            <textarea name="necessidade-text" id="necessidade-text" class="necessidade-text" cols="40" rows="7" style="border: 1px solid #CCC; width: calc(100% - 10px);"></textarea>
+        </div>
+        <br>
+        <div style="display: flex; ">
+            <p style="font-size: 11px; margin-right: 10px;">Metodo de Pagamento</p>
+            <select name="pagamento" class="pagamento" id="pagamento">
+                <option>selecione</option>
+                <option>PIX</option>
+                <option>Cartão Débito/Crédito</option>
+            </select>
+        </div>
+        <div style="display: flex; justify-content: flex-end; margin-top: 30px;">
+            <button onclick="realizarEdicao()" style="border: 1px solid #CCC; padding: 5px 10px; margin-right: 10px; border-radius: 15px; background-color: #1d1d1d; color: #FFF;">Realizar Agendamento</button>
+            <button style="border: 1px solid #CCC; padding: 5px 10px; margin-right: 10px; border-radius: 15px; background-color: #1d1d1d; color: #FFF;">Cancelar</button>
+        </div>
+        <footer class="footer">
+            <div class="item">
+                <a href="../perfil/perfil.html">
+                    <img src="../../images/user.png" alt="User" width="32">
+                </a>
+            </div>
+            <div class="item">
+                <a href="../paginaInicial/paginaInicial.html">
+                    <img src="../../images/home.png" alt="User" width="32">
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <img src="../../images/setting.png" alt="User" width="32">
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+  // Obter os valores armazenados no localStorage
+  let data_agendamento = localStorage.getItem("data_agendamento");
+  let hora_agendamento = localStorage.getItem("hora_agendamento");
+  let data_agendamento_saida = localStorage.getItem("data_agendamento_saida");
+  let hora_agendamento_saida = localStorage.getItem("hora_agendamento_saida");
+  let vaga_adaptada = localStorage.getItem("vaga_adptada");
+  let necessidade_text = localStorage.getItem("necessidade_text");
+  let pagamento = localStorage.getItem("pagamento");
+
+  // Preencher automaticamente os campos de entrada
+  document.getElementById("data-agendamento").value = data_agendamento;
+  document.getElementById("hora-agendamento").value = hora_agendamento;
+  document.getElementById("data-agendamento-saida").value = data_agendamento_saida;
+  document.getElementById("hora-agendamento-saida").value = hora_agendamento_saida;
+  document.getElementById("vaga-adptada").checked = vaga_adaptada === "true";
+  document.getElementById("necessidade-text").value = necessidade_text;
+  document.getElementById("pagamento").value = pagamento;
+});
+    </script>
+    <script src="../../scripts/database.js"></script>
+</body>
+</html>

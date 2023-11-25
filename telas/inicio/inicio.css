@@ -1,0 +1,60 @@
+.inicio-btn{
+    width: 125px;
+    height: 65px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.inicio-btn:hover{
+    background-color: gray;
+}
+
+.inicio-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.FormInput{
+    height: 25px;
+    width: 155px;
+    border-radius: 8px;
+}
+
+button[type="submit"]{
+    background-color: black;
+    color: white;
+    height: 35px;
+    width: 95px;
+    border-radius: 15px;
+}
+
+.aviso{
+    color: red;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.icons a{
+    text-decoration: none;
+}
+
+h1 a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.form-cadastro-usuario input
+{
+    border: none;
+    border: 1px solid #CCC;
+    padding: 2px 25px;
+}
+
+.form-cadastro-usuario .submit
+{
+    width: 100% !important;
+}
